@@ -1,0 +1,32 @@
+a {
+    color: purple;
+}
+
+.main-menu > li > a {
+    color: green;
+}
+
+.third-level  {
+    list-style-type: square;
+}
+
+.second-level  {
+    list-style-image: url('li.svg');
+}
+
+.main-menu  ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.main-menu > li ul.third-level {
+    list-style-type: square;
+}
+
+.third-level a {
+    text-decoration: none;
+}
+
+.misc ol{
+    list-style-position: inside;
+}
