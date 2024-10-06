@@ -1,125 +1,102 @@
-.main {
-    background-color: rgb(255, 165, 0);
-    width: 500px;
-    padding: 20px;
-    color: white;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div {
+    background-color: rgb(255, 165, 0); /* Оранжевий фон */
+    width: 500px; /* Ширина блоку 500px */
+    padding: 20px; /* Внутрішній відступ з усіх сторін */
+    color: white; /* Колір тексту білий */
 }
 
+/* Заголовок 1-го рівня */
 h1 {
-    font-size: 25px;
-    font-weight: 900;
-    margin-bottom: 10px;
+    font-size: 25px; /* Розмір тексту 25px */
+    font-weight: 900; /* Насиченість шрифту – 900 (black) */
+    margin-bottom: 10px; /* Нижній зовнішній відступ 10px */
 }
-
+/* Загальні вимоги для маркерованого списку */
 ul {
     list-style-type: none;
     list-style-position: inside;
-    padding-left: 0;
 }
 
-ul.level-1 li {
-    background-color: rgb(103, 158, 128);
-    padding-right: 20px;
-    padding-left: 50px;
-}
+ul > li  {
 
-ul.level-2 li {
-    font-size: 18px;
-    font-style: italic;
-    background-color: rgb(153, 180, 102);
-    margin-bottom: 10px;
-    padding-left: 40px;
-}
+    background-color: rgb(103, 158, 128); /* Колір фону */
+    padding-right: 20px; /* Внутрішній відступ правий */
+    padding-left: 50px; /* Внутрішній відступ лівий */
 
-li.item-1-1 {
+}
+ul > li{
+    background-size: 10%;
     background-image: url('img/rule.png');
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    padding-left: 40px;
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    background-position:0 0; /* Position image at the start of the list item */
 }
 
-li.item-1-2 {
-    background-image: url('img/rule.png');
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    padding-left: 40px;
-}
-
-li.item-2-1 {
-    background-image: url('img/ad_units.png');
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    padding-left: 40px;
-}
-
-li.item-2-2 {
-    background-image: url('img/airplane_ticket.png');
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    padding-left: 40px;
-}
-
-li.item-2-3 {
-    background-image: url('img/hotel.png');
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    padding-left: 40px;
-}
-
-li.item-2-4 {
-    background-image: url('img/car_rental.png');
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    padding-left: 40px;
-}
-
-li.item-2-5 {
-    background-image: url('img/local_bar.png');
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    padding-left: 40px;
-}
-li.item-2-6 {
-    background-image: url('img/casino.png');
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    padding-left: 40px;
-}
-li.item-2-7 {
-    background-image: url('img/museum.png');
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    padding-left: 40px;
-}
-li.item-2-8 {
-    background-image: url('img/festival.png');
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    padding-left: 40px;
+ul li + li {
+    margin-top: 10px;
 }
 
 span {
+    padding: 10px 20px;
     display: inline-block;
-    padding: 10px 20px 10px 20px;
 }
 
-.span1{
-    font-size: 20px;
-    font-weight: 700;
-    background-color: rgb(199, 124, 106);
-    margin-bottom: 10px;
+ul ul li>span{
+    background-color: rgb(218, 106, 32); /* Колір фону */
+}
+.plan-item{
+    font-size: 18px; /* Розмір тексту */
+    font-style: italic; /* Курсив */
+    background-color: rgb(153, 180, 102); /* Колір фону */
+    /*margin-bottom: 10px; !* Нижній зовнішній відступ *!*/
+    padding-left: 40px; /* Внутрішній відступ лівий */
 }
 
-.span2 {
-    background-color: rgb(218, 106, 32);
+.plan-list {
+    .plan-title {
+        font-size: 20px; /* Розмір тексту */
+        font-weight: 700; /* Насиченість шрифту – 700 (bold) */
+        background-color: rgb(199, 124, 106); /* Колір фону */
+        margin-bottom: 10px; /* Нижній зовнішній відступ */
+    }
+}
+.plan-sublist {
+
+    li {
+        background-position: center left;
+        background-size: contain;
+    }
+    .has-icon{
+        background-position: center left;
+        background-size: contain;
+    }
+    .icon-way{
+        background-image: url('img/ad_units.png');
+    }
+    .icon-plane{
+        background-image: url('img/ad_units.png');
+    }
+    .icon-hotel{
+        background-image: url('img/hotel.png');
+    }
+    .icon-car{
+        background-image: url('img/car_rental.png');
+    }
+    .icon-bar{
+        background-image: url('img/local_bar.png');
+    }
+    .icon-casino{
+        background-image: url('img/casino.png');
+    }
+    .icon-fest{
+        background-image: url('img/festival.png');
+    }
+    .icon-museum{
+        background-image: url('img/museum.png');
+    }
 }

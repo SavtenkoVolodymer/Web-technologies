@@ -34,30 +34,32 @@
     <legend>Вибір опцій</legend>
 
     <p>Виберіть стать:</p>
-    <label for="male">Чоловік</label>
+
     <input type="radio" id="male" name="gender" value="male" tabindex="7">
-    <label for="female">Жінка</label>
+    <label for="male">Чоловік</label>
     <input type="radio" id="female" name="gender" value="female" tabindex="8">
-    <label for="other">Інше</label>
-    <input type="radio" id="other" name="gender" value="other" tabindex="9"><br><br>
+    <label for="female">Жінка</label>
+    <input type="radio" id="other" name="gender" value="other" tabindex="9">
+    <label for="other">Інше</label><br><br>
+
 
     <p>Виберіть країну проживання:</p>
-    <label for="ua">Україна</label>
     <input type="radio" id="ua" name="country" value="ua" tabindex="10">
-    <label for="us">США</label>
+    <label for="ua">Україна</label>
     <input type="radio" id="us" name="country" value="us" tabindex="11">
-    <label for="de">Німеччина</label>
-    <input type="radio" id="de" name="country" value="de" checked tabindex="12"><br><br>
+    <label for="us">США</label>
+    <input type="radio" id="de" name="country" value="de" checked tabindex="12">
+    <label for="de">Німеччина</label><br><br>
 
     <p>Інтереси:</p>
-    <label for="sport">Спорт</label>
     <input type="checkbox" id="sport" name="interests" value="sport" tabindex="13">
-    <label for="music">Музика</label>
+    <label for="sport">Спорт</label>
     <input type="checkbox" id="music" name="interests" value="music" tabindex="14">
-    <label for="travel">Подорожі</label>
+    <label for="music">Музика</label>
     <input type="checkbox" id="travel" name="interests" value="travel" tabindex="15">
-    <label for="books">Книги</label>
-    <input type="checkbox" id="books" name="interests" value="books" tabindex="16"><br><br>
+    <label for="travel">Подорожі</label>
+    <input type="checkbox" id="books" name="interests" value="books" tabindex="16">
+    <label for="books">Книги</label><br><br>
 
     <label for="city">Виберіть місто:</label>
     <select id="city" name="city" tabindex="17">
@@ -116,6 +118,9 @@
 
   </fieldset>
 
+  <div class="form-buttons">
+    
+  </div>
   <button type="submit" tabindex="22">Надіслати</button>
   <button type="reset" tabindex="23">Скинути</button>
 </form>
