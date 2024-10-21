@@ -1,0 +1,84 @@
+.weather{
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+.cloud{
+    position: relative;
+    top: 20px;
+    left: 70px;
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    box-shadow: 10px 10px 30px 2px black;
+    z-index: 1;
+}
+.number{
+    position: absolute;
+    font-size: 110px;
+    bottom: 0;
+    left: 0;
+    color: darkgray;
+    opacity: 1;
+}
+.number:after{
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: 10px;
+    left: 140px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+img{
+    position: relative;
+    bottom: 10px;
+    height: 300px;
+    left: 50px;
+    width: 550px;
+}
+
+.navigation{
+    position: relative;
+    top: 40%;
+    right: 70px;
+    opacity: 0.4;
+}
+#left{
+    position: relative;
+    background-image: url("img/left.jpg");
+    height: 64px;
+    width: 64px;
+    left: 5px;
+}
+#right{
+    background-image: url("img/right.jpg");
+    height: 64px;
+    width: 64px;
+}
+.temperature_block{
+    position: relative;
+    left: 400px;
+    bottom: 50px;
+    display: inline-block;
+    width: 350px;
+    height: 150px;
+    background-color: darkgray;
+    box-shadow: 10px 10px 2px 0 dimgray;
+}
+.temperature{
+    font-size: 24px;
+    font-weight: bold;
+}
+.day{
+    opacity: 0.4;
+}
+li{
+    list-style-type: none;
+    position: relative;
+    top: 70px;
+    float: left;
+    margin: 10px;
+}

@@ -41,6 +41,7 @@ ul li a {
 }
 
 .block {
+    clear: both;
     padding: 20px;
     margin: 0 auto 20px;
     width: 80%;
